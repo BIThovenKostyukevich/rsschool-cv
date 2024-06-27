@@ -1,7 +1,7 @@
 <h1>
     Daniil Kastsiukevich
     </h1>
-    <h3>
+    <h3> 
         Student
     </h3>
     <hr>
