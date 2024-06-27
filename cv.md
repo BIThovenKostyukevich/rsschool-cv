@@ -15,7 +15,7 @@
         <br>
         <a href="https://www.linkedin.com/in/daniil-kastsiukevich-7b22882a8/">Linkedin</a>
     </p>
-    <hr>
+    <hr> 
     <h2>
         Information about me
     </h2>
