@@ -1,0 +1,53 @@
+* {
+    margin: 30;
+    padding: 30;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #a1e0fe;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+main h2 {
+    color: #7fb2ce;
+    margin-bottom: 10px;
+}
+
+main p, main code {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #8cd4f5;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    display: block;
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+}
