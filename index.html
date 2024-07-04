@@ -2,167 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Dk" content="width=device-width, initial-scale=1.0">
     <title>CVDK</title>
-    <style>
-        body {
-            margin: 0; 
-            position: relative; 
-            font-family: Arial, sans-serif;
-            padding-bottom: 80px; /* Space for the fixed footer */
-        }
-
-        .red-line {
-            width: 100vw; 
-            height: 160px; 
-            background-color: rgba(255, 105, 105, 0.8); 
-            position: absolute; 
-            top: 110px; 
-            left: 0; 
-        }
-
-        .vertical-line {
-            width: 160px; 
-            height: 350vh; 
-            background-color: rgba(255, 105, 105, 0.8); 
-            position: absolute; 
-            top: 0; 
-            left: 115px; 
-        }
-
-        .resume-field {
-            width: 900px; 
-            padding: 20px; 
-            border: 0px solid #ffeeee; 
-            background-color: #ffeeee; 
-            position: absolute; 
-            top: 285px; 
-            left: 290px; 
-        }
-
-        .resume-field1 {
-            width: 900px; 
-            padding: 20px; 
-            border: 0px solid #ffeeee; 
-            background-color: #ffeeee; 
-            position: absolute; 
-            top: 450px; 
-            left: 290px; 
-        }
-
-        .resume-field2 {
-            width: 900px; 
-            padding: 20px; 
-            border: 0px solid #ffeeee; 
-            background-color: #ffeeee; 
-            position: absolute; 
-            top: 990px; 
-            left: 290px; 
-        }
-
-        .resume-field3 {
-            width: 900px; 
-            padding: 20px; 
-            border: 0px solid #ffeeee; 
-            background-color: #ffeeee; 
-            position: absolute; 
-            top: 1310px; 
-            left: 290px; 
-        }
-
-        .resume-field4 {
-            width: 900px; 
-            padding: 20px; 
-            border: 0px solid #ffeeee; 
-            background-color: #ffeeee; 
-            position: absolute; 
-            top: 1483px; 
-            left: 290px; 
-        }
-        
-        .resume-field6 {
-            width: 900px; 
-            padding: 20px; 
-            border: 0px solid #ffeeee; 
-            background-color: #ffeeee; 
-            position: absolute; 
-            top: 1695px; 
-            left: 290px; 
-        }
-
-        .code-field {
-            width: 900px; 
-            padding: 20px; 
-            border: 1px solid #ffeeee; 
-            background-color: #ffeeee; 
-            position: absolute; 
-            top: 1905px; 
-            left: 290px; 
-            font-family: monospace; 
-            overflow: auto; 
-        }
-
-        .profile-image {
-            width: 160px; 
-            height: 160px; 
-            position: absolute; 
-            top: 110px; 
-            left: 115px; 
-            object-fit: cover; 
-        }
-
-        nav {
-            width: 100%;
-            background-color: rgba(255, 105, 105, 0.8); 
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li a {
-            display: block;
-            padding: 14px 20px;
-            color: white;
-            text-decoration: none;
-        }
-
-        nav ul li a:hover {
-            background-color: #ff4c4c;
-        }
-
-        footer {
-            width: 100%;
-            background-color: rgba(255, 105, 105, 0.8); 
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-        }
-
-        .footer-image {
-            width: 140px;
-            height: 50px;
-            object-fit: cover;
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
@@ -186,41 +28,37 @@
 
     <div class="resume-field1" id="skills">
         <h2>About me and my skills</h2>
-        <p>
-            I'm glad you're looking at my CV.<br><br>
-            Who am I? I am a QA manual, a Junior. I will be glad to do work with you. The result and significance of my work are important to me. It is important for me to influence the development of the product and make it better.<br><br>
-            Why Software Testing? I chose Software Testing because I like research work and I also know how to work with documents.<br><br>
-            I quickly find a common language with all people, I am sociable and curious. I also study Automation.<br><br>
-            Familiarity with SDLC, Agile and Waterfall models, various testing methods.<br>
-            Knowledge in fundamental testing principles.<br>
-            Capability to create checklists, test cases, and bug reports.<br>
-            Understanding of Jira and ability to work with existing boards.<br>
-            Basic knowledge of Git operations.<br>
-            Ability to write moderately complex SQL queries.<br>
-            Proficiency in using Android Studio for mobile testing in simple cases.<br>
-            Experience in web application testing using browser tools.<br>
-            Understanding of REST API principles.<br>
-            Basic proficiency with Chrome Dev tools for debugging purposes.<br>
-            Basic API testing skills using Postman to create and execute test collections.<br>
-            I can write a test plan.<br>
-            Ability to trace elements markup using developer tools in GUI testing.<br>
-        </p>
+        <ul class="skills-list">
+            <li>Familiarity with SDLC, Agile and Waterfall models, various testing methods.</li>
+            <li>Knowledge in fundamental testing principles.</li>
+            <li>Capability to create checklists, test cases, and bug reports.</li>
+            <li>Understanding of Jira and ability to work with existing boards.</li>
+            <li>Basic knowledge of Git operations.</li>
+            <li>Ability to write moderately complex SQL queries.</li>
+            <li>Proficiency in using Android Studio for mobile testing in simple cases.</li>
+            <li>Experience in web application testing using browser tools.</li>
+            <li>Understanding of REST API principles.</li>
+            <li>Basic proficiency with Chrome Dev tools for debugging purposes.</li>
+            <li>Basic API testing skills using Postman to create and execute test collections.</li>
+            <li>I can write a test plan.</li>
+            <li>Ability to trace elements markup using developer tools in GUI testing.</li>
+        </ul>
     </div>
 
     <div class="resume-field2" id="tools">
         <h2>My Tools</h2>
-        <p>
-            Charles<br>
-            Android Studio<br>
-            DevTools<br>
-            JIRA<br>
-            Git, GitHub<br>
-            Postman<br>
-            Workbench SQL<br>
-            Visual Studio Code<br>
-            IntelliJ IDEA<br>
-            Octoparse 8<br>
-        </p>
+        <ul class="tools-list">
+            <li>Charles</li>
+            <li>Android Studio</li>
+            <li>DevTools</li>
+            <li>JIRA</li>
+            <li>Git, GitHub</li>
+            <li>Postman</li>
+            <li>Workbench SQL</li>
+            <li>Visual Studio Code</li>
+            <li>IntelliJ IDEA</li>
+            <li>Octoparse 8</li>
+        </ul>
     </div>
 
     <div class="resume-field3" id="education">
@@ -234,26 +72,26 @@
 
     <div class="resume-field4" id="languages">
         <h2>My Languages</h2>
-        <p>
-            Belarusian C1<br>
-            Russian B2<br>
-            English B1 (But I learn quickly)<br>
-            Code = Java (I read code and write small commands)<br>
-        </p>
+        <ul class="languages-list">
+            <li>Belarusian C1</li>
+            <li>Russian B2</li>
+            <li>English B1 (But I learn quickly)</li>
+            <li>Code = Java (I read code and write small commands)</li>
+        </ul>
     </div>
     
     <div class="resume-field6" id="contacts">
         <h2>My Contacts</h2>
-        <p>
-            Telegram: @GitHate<br>
-            Email: d.kostyukevich33@gmail.com<br>
-            <a href="https://www.linkedin.com/in/daniil-kastsiukevich-7b22882a8/" target="_blank">LinkedIn</a><br>
-            Instagram: kostyukevich.33<br>
-        </p>
+        <ul class="contacts-list">
+            <li>Telegram: @GitHate</li>
+            <li>Email: <a href="mailto:d.kostyukevich33@gmail.com">d.kostyukevich33@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/daniil-kastsiukevich-7b22882a8/" target="_blank">LinkedIn</a></li>
+            <li>Instagram: kostyukevich.33</li>
+        </ul>
     </div>
 
     <div class="code-field" id="sample-code">
-        <h2>Sample Code, Yes i wrote it</h2>
+        <h2>Sample Code, Yes I wrote it</h2>
         <pre><code>
 // Sample JavaScript function
 function greet(name) {
