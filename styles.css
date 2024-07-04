@@ -17,10 +17,10 @@ body {
 
 .vertical-line {
     width: 160px;
-    height: 350vh;
+    height: 430vh;
     background-color: rgba(255, 105, 105, 0.8);
     position: absolute;
-    top: 0;
+    top: -35px;
     left: 115px;
 }
 
@@ -44,27 +44,27 @@ body {
 }
 
 .resume-field1 {
-    top: 455px;
+    top: 475px;
 }
 
 .resume-field2 {
-    top: 1065px;
+    top: 1190px;
 }
 
 .resume-field3 {
-    top: 1485px;
+    top: 1670px;
 }
 
 .resume-field4 {
-    top: 1685px;
+    top: 1895px;
 }
 
 .resume-field6 {
-    top: 2200px;
+    top: 2550px;
 }
 
 .code-field {
-    top: 1925px;
+    top: 2170px;
     border: 1px solid #ffeeee;
     font-family: monospace;
     overflow: auto;
