@@ -8,6 +8,8 @@
         body {
             margin: 0; 
             position: relative; 
+            font-family: Arial, sans-serif;
+            padding-bottom: 80px; /* Space for the fixed footer */
         }
 
         .red-line {
@@ -18,9 +20,10 @@
             top: 110px; 
             left: 0; 
         }
+
         .vertical-line {
             width: 160px; 
-            height: 250vh; 
+            height: 350vh; 
             background-color: rgba(255, 105, 105, 0.8); 
             position: absolute; 
             top: 0; 
@@ -46,6 +49,7 @@
             top: 450px; 
             left: 290px; 
         }
+
         .resume-field2 {
             width: 900px; 
             padding: 20px; 
@@ -55,6 +59,7 @@
             top: 990px; 
             left: 290px; 
         }
+
         .resume-field3 {
             width: 900px; 
             padding: 20px; 
@@ -64,6 +69,7 @@
             top: 1310px; 
             left: 290px; 
         }
+
         .resume-field4 {
             width: 900px; 
             padding: 20px; 
@@ -73,28 +79,112 @@
             top: 1483px; 
             left: 290px; 
         }
+        
+        .resume-field6 {
+            width: 900px; 
+            padding: 20px; 
+            border: 0px solid #ffeeee; 
+            background-color: #ffeeee; 
+            position: absolute; 
+            top: 1695px; 
+            left: 290px; 
+        }
+
+        .code-field {
+            width: 900px; 
+            padding: 20px; 
+            border: 1px solid #ffeeee; 
+            background-color: #ffeeee; 
+            position: absolute; 
+            top: 1905px; 
+            left: 290px; 
+            font-family: monospace; 
+            overflow: auto; 
+        }
+
         .profile-image {
             width: 160px; 
             height: 160px; 
             position: absolute; 
-            top: 110px; /* Отступ от верхнего края */
-            left: 115px; /* Отступ от левого края */
+            top: 110px; 
+            left: 115px; 
             object-fit: cover; 
         }
 
+        nav {
+            width: 100%;
+            background-color: rgba(255, 105, 105, 0.8); 
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff4c4c;
+        }
+
+        footer {
+            width: 100%;
+            background-color: rgba(255, 105, 105, 0.8); 
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-image {
+            width: 140px;
+            height: 50px;
+            object-fit: cover;
+            margin-top: 10px;
+        }
     </style>
 </head>
-
 <body>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#sample-code">Sample Code</a></li>
+        </ul>
+    </nav>
     <div class="red-line"></div>
     <div class="vertical-line"></div>
-    <div class="resume-field">
+    <img src="imgfotcv.png" alt="Profile Image" class="profile-image">
+    <div class="resume-field" id="about">
         <h1>Daniil Kastsiukevich</h1>
-        <p>Qa Manual, i am learn layout, now</p>
-
+        <p>QA Manual, I am learning layout now</p>
     </div>
 
-    <div class="resume-field1">
+    <div class="resume-field1" id="skills">
         <h2>About me and my skills</h2>
         <p>
             I'm glad you're looking at my CV.<br><br>
@@ -117,39 +207,64 @@
         </p>
     </div>
 
-    <div class="resume-field2">
-        <h2>Tools</h2>
+    <div class="resume-field2" id="tools">
+        <h2>My Tools</h2>
         <p>
             Charles<br>
-            AndroidStudio<br>
+            Android Studio<br>
             DevTools<br>
             JIRA<br>
-            Git,GitHub<br>
+            Git, GitHub<br>
             Postman<br>
             Workbench SQL<br>
-            Visua lstudio Code<br>
-            intellij IDEA<br>
-            Octopars 8<br>
-                    
+            Visual Studio Code<br>
+            IntelliJ IDEA<br>
+            Octoparse 8<br>
         </p>
     </div>
-    <div class="resume-field3">
-        <h2>
-            Education
-        </h2>
+
+    <div class="resume-field3" id="education">
+        <h2>Education</h2>
         <p>
-            Course on Udemy = Testerfromscratch2024.Web/Mobile, Postman, SQL, Git, Bash.<br>
+            Course on Udemy = Tester from scratch 2024. Web/Mobile, Postman, SQL, Git, Bash.<br>
             BSU/Documentation/Faculty of History.<br>
+            And some course about AQA(Java) on Coursera<br>
         </p>
     </div>
-    <div class="resume-field4">
-        <h2>
-            Languages
-        </h2>
+
+    <div class="resume-field4" id="languages">
+        <h2>My Languages</h2>
         <p>
-            BelarusianC1<br>RussianB2<br>English B1<br>(ButIlearn quickly)<br>Code=Java(I read code and write small commands)<br>
+            Belarusian C1<br>
+            Russian B2<br>
+            English B1 (But I learn quickly)<br>
+            Code = Java (I read code and write small commands)<br>
         </p>
     </div>
-    <img src="imgfotcv.png" alt="Profile Image" class="profile-image">
+    
+    <div class="resume-field6" id="contacts">
+        <h2>My Contacts</h2>
+        <p>
+            Telegram: @GitHate<br>
+            Email: d.kostyukevich33@gmail.com<br>
+            <a href="https://www.linkedin.com/in/daniil-kastsiukevich-7b22882a8/" target="_blank">LinkedIn</a><br>
+            Instagram: kostyukevich.33<br>
+        </p>
+    </div>
+
+    <div class="code-field" id="sample-code">
+        <h2>Sample Code, Yes i wrote it</h2>
+        <pre><code>
+// Sample JavaScript function
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+
+console.log(greet("World"));
+        </code></pre>
+    </div>
+    <footer>
+        <img src="rss.png" alt="Footer Image" class="footer-image">
+    </footer>
 </body>
 </html>
