@@ -13,7 +13,7 @@
             <li><a href="#tools">Tools</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#languages">Languages</a></li>
-            <li><a href="#sample-code">Sample Code</a></li>
+            <li><a href="#sample-code">Code</a></li>
             <li><a href="#contacts">Contacts</a></li>
         </ul>
     </nav>
