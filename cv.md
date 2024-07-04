@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -110,7 +110,7 @@
     </div>
     <footer>
         <img src="rss.png" alt="Footer Image" class="footer-image">
-        <p>Validate this page at <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbithovenkostyukevich.github.io%2Frsschool-cv%2Fcv" target="_blank">W3C Validator</a></p>
+        <a href="https://https://app.rs.school/>RSS</a>
     </footer>
 </body>
 </html>
