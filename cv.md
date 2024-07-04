@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="DKCV" content="width=device-width, initial-scale=1.0">
     <title>CVDK</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -110,7 +110,7 @@
     </div>
     <footer>
         <img src="rss.png" alt="Footer Image" class="footer-image">
-        <p>2024<a href="https://github.com/BIThovenKostyukevich">GitAVTORA</a><a href="https://https://app.rs.school/">RSS</a></p>
+        <p>2024 <a href="https://github.com/BIThovenKostyukevich">GitAVTORA</a> <a href="https://rs.school/">RSS</a></p>
     </footer>
 </body>
 </html>
