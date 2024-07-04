@@ -110,7 +110,7 @@
     </div>
     <footer>
         <img src="rss.png" alt="Footer Image" class="footer-image">
-        <a href="https://https://app.rs.school/>RSS</a>
+        <p> 2024 <a href="https://github.com/BIThovenKostyukevich">GitAVTORA</a> <a href="https://https://app.rs.school/>RSS"</a></p>
     </footer>
 </body>
 </html>
