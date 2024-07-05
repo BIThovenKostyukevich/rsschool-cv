@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Dk" content="width=device-width, initial-scale=1.0">
+    <meta name="DKCV" content="width=device-width, initial-scale=1.0">
     <title>CVDK</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,7 +14,7 @@
             <li><a href="#tools">Tools</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#languages">Languages</a></li>
-            <li><a href="#sample-code">Sample Code</a></li>
+            <li><a href="#sample-code">Code</a></li>
             <li><a href="#contacts">Contacts</a></li>
         </ul>
     </nav>
@@ -110,6 +110,7 @@
     </div>
     <footer>
         <img src="rss.png" alt="Footer Image" class="footer-image">
+        <p>2024 <a href="https://github.com/BIThovenKostyukevich">GitAVTORA</a> <a href="https://rs.school/">RSS</a></p>
     </footer>
 </body>
 </html>
