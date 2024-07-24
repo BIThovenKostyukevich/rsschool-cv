@@ -1,6 +1,5 @@
 # rsschool-cv
-https://bithovenkostyukevich.github.io/rsschool-cv/shelter/
-  
-https://bithovenkostyukevich.github.io/rsschool-cv/cv
+https://bithovenkostyukevich.github.io/rsschool-cv/index.html
+https://bithovenkostyukevich.github.io/rsschool-cv/index1.html
 
 
