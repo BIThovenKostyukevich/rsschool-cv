@@ -58,7 +58,7 @@ body {
     height: 0px;
 }
 .Title {
-    width: 184px;
+    width: max-content;
     font-family: Georgia, serif;
     font-weight: 400;
     letter-spacing: 0.06em;
@@ -79,12 +79,14 @@ body {
     Line-height: 14.95px;
     letter-spacing: 0.09em;
     color: #292929;
+    margin: 0%;
+    position: absolute;
 
 }
 .Title h1 {
     font-weight: 400;
     margin: 0;
-    font-size: 28px;
+    font-size: 32px;
     color: #545454;
 }
 
@@ -503,6 +505,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-family: Georgia;
 }
 
 .pagination-button {
@@ -931,6 +934,9 @@ position: absolute;
         height: max-content;
         top: 216px;
         left: 1px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
     }
 
     .pop-characters1::before,
@@ -947,6 +953,21 @@ position: absolute;
 }
 .pop-name-characters {
     margin: 0%;
+}
+.pop-characters1, .pop-characters2, .pop-characters3, .pop-characters4 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 14px;
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 12.5px;
+    letter-spacing: 0.06em;
+    width: auto;
+    height: 18px;
+    /* line-height: 16.5px; */
+    text-align: start;
 }
 /*.pop-characters1 {
     top: 0px;
