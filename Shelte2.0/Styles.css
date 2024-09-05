@@ -59,6 +59,8 @@ body {
     Line-height: 14.95px;
     letter-spacing: 0.09em;
     color: #FFFFFF;
+    margin: 0%;
+    position: absolute;
 
 }
 .Title h1 {
@@ -66,6 +68,7 @@ body {
     margin: 0;
     font-size: 28px;
     color: rgba(241, 205, 179, 1);
+    font-size: 32px;
 }
 
 .left-header-text-field p {
@@ -88,7 +91,7 @@ body {
 }
 
 .nav-button {
-    position: relative; /* Для использования псевдоэлементов */
+    position: relative; /*  */
     font-family: Arial;
     font-size: 15px;
     font-weight: 400;
@@ -106,7 +109,7 @@ body {
 .nav-button::after {
     content: '';
     position: absolute;
-    bottom: -3px;
+    bottom: 3px;
     left: 50%;
     width: 0;
     height: 3px;
@@ -120,7 +123,7 @@ body {
 }
 
 .nav-button:hover {
-    background-color: transparent; /* Убрать фоновый цвет при наведении */
+    background-color: transparent; /*  */
 }
 
 .start-screen {
@@ -415,9 +418,9 @@ body {
             top: 20px;
             left: 250px;
             right: 40px;
-            z-index: 11; /* Increased z-index to ensure it stays above the navmenu */
+            z-index: 11; /*  */
             display: flex;
-            transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease; /* Added transition for width and height */
+            transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease; /*  */
         }
         
 
@@ -440,9 +443,9 @@ body {
             transform: translateY(16px);
         }
         .open .burger-btn {
-            transform: rotate(90deg); /* Поворот на 90 градусов */
-            width: 30px; /* Обновленный размер */
-            height: 30px; /* Обновленный размер */
+            transform: rotate(90deg); /*  */
+            width: 30px; /*  */
+            height: 30px; /*  */
         }
 
         .burger {
@@ -1019,7 +1022,7 @@ body {
             display: flex;
             top: -38px;
             padding: 0px;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease,/* opacity 0.5s ease*/;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease,/*  */;
 
             margin: 0px;
         }
@@ -1326,6 +1329,24 @@ position: absolute;
         height: max-content;
         top: 216px;
         left: 1px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .pop-characters1, .pop-characters2, .pop-characters3, .pop-characters4 {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        left: 14px;
+        font-family: Georgia;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 12.5px;
+        letter-spacing: 0.06em;
+        width: auto;
+        height: 18px;
+        /* line-height: 16.5px; */
+        text-align: start;
     }
 
     .pop-characters1::before,
