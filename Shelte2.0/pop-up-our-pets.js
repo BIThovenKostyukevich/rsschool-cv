@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const cards = document.querySelectorAll(".card-button"); 
+    const cards = document.querySelectorAll(".card");
     const popup = document.getElementById("popup");
     const closeButton = document.querySelector(".close-button");
 
@@ -13,26 +13,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
     cards.forEach((card) => {
         card.addEventListener("click", function() {
-            const petName = card.previousElementSibling.textContent.trim(); 
+            const petName = card.querySelector(".card-text p").textContent.trim(); 
             const petData = petsData.find(pet => pet.name === petName);
 
             if (petData) {
                 updatePopupContent(petData);
                 popup.style.display = "flex";
-                document.querySelector('.overlay').style.display = "block"; 
+                document.querySelector('.overlay').style.display = "block";
+                document.body.classList.add('no-scroll'); // НЕЕЕЕТУ СКРОЛЛААА
             }
         });
     });
 
     closeButton.addEventListener("click", function() {
-        popup.style.display = "none";
-        document.querySelector('.overlay').style.display = "none"; 
+        closePopup();
     });
 
     window.addEventListener("click", function(event) {
         if (event.target === popup || event.target === document.querySelector('.overlay')) {
-            popup.style.display = "none";
-            document.querySelector('.overlay').style.display = "none"; 
+            closePopup();
         }
     });
 
@@ -53,5 +52,11 @@ document.addEventListener("DOMContentLoaded", function() {
         popListItems[1].querySelector('.label-normal').textContent = pet.inoculations.join(', ');
         popListItems[2].querySelector('.label-normal').textContent = pet.diseases.join(', ');
         popListItems[3].querySelector('.label-normal').textContent = pet.parasites.join(', ');
+    }
+
+    function closePopup() {
+        popup.style.display = "none";
+        document.querySelector('.overlay').style.display = "none";
+        document.body.classList.remove('no-scroll');
     }
 });
