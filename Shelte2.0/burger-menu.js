@@ -24,18 +24,35 @@ document.addEventListener('DOMContentLoaded', function() {
         return false;
     }
 
-    burgerBtn.addEventListener('click', function() {
+    function toggleMenu() {
         navMenu.classList.toggle('open');
         overlay.classList.toggle('open');
         burgerBtn.classList.toggle('open');
-
-        // Перемещение кнопки бургера
+        
         burgerBtn.classList.toggle('open-position');
 
         if (navMenu.classList.contains('open')) {
             disableScroll(); 
         } else {
             enableScroll(); 
+        }
+    }
+
+    burgerBtn.addEventListener('click', toggleMenu);
+
+    const navLinks = document.querySelectorAll('.nav-menu .nav-button');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (navMenu.classList.contains('open')) {
+                toggleMenu(); 
+            }
+        });
+    });
+
+
+    overlay.addEventListener('click', function() {
+        if (navMenu.classList.contains('open')) {
+            toggleMenu(); 
         }
     });
 });
