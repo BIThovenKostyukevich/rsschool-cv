@@ -494,7 +494,7 @@ body {
             top: 50px;
             right: 20px;
             left: auto;
-        }
+        } 
        
     }      
 }
@@ -1251,9 +1251,26 @@ position: absolute;
     background-color: unset;
     border: 2px solid #F1CDB3;
 }
+.no-scroll {
+    overflow: hidden;
+}
 
-.close-button:hover {
-    color: #000000;
+.close-button {
+    background-color: transparent; 
+    border: 2px solid #F1CDB3; 
+    border-radius: 50%; 
+    font-size: 2rem; 
+    cursor: pointer; 
+    color: black; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 0.5rem; 
+    outline: none; 
+}
+
+.close-button:hover, .close-button:focus {
+    background-color: #F1CDB3; 
+    color: black; 
+    outline: none; 
 }
 @media (max-width: 1279px) {
     .pop-up-some {
