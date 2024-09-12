@@ -96,6 +96,6 @@
       "age": "for example",
       "inoculations": ["for example", "for example"],
       "diseases": ["for example", "for example"],
-      "parasites": ["for example", "for example"]
+      "parasites": ["for example"]
     }
   ]
