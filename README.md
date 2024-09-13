@@ -1,6 +1,1 @@
-# rsschool-cv
-https://bithovenkostyukevich.github.io/rsschool-cv/
-  
-https://bithovenkostyukevich.github.io/rsschool-cv/cv
-
-
+https://BIThovenKostyukevich.github.io/css-meme-slider/slider.html
