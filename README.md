@@ -1,1 +1,1 @@
-https://BIThovenKostyukevich.github.io/css-meme-slider/slider.html
+https://BIThovenKostyukevich.github.io/rsschool-cv/slider.html
