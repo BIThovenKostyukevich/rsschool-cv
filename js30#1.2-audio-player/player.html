@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="player.css">
+    <link rel="icon" type="image/png" sizes="64x64" href="o.png">   
+</head>
+<body>
+    <div class="wrapper">
+        <div class="player">
+            <div class="name">Format!8</div>
+            <!-- Музыка -->
+            <audio id="audio" src="Тимур Муцураев -  Проданные Крылья Джихада.mp3"></audio>
+            <!-- Кнопкі -->
+            <div class="controls">
+                <button id="play-pause" class="play">Play</button>
+                <input type="range" id="progress-bar" min="0" max="100" value="0">
+                <span id="current-time">00:00</span> / <span id="duration">00:00</span>
+            </div>
+        </div>
+    </div>
+    <script src="player.js"></script>
+</body>
+</html>
