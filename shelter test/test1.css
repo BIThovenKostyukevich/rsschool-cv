@@ -1,0 +1,371 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 768px;
+    position: relative;
+    margin: auto;
+}
+
+.section-header {
+    width: 100%;
+    height: 120px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    width: 708px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 10;
+    left: 40px;
+    position: absolute;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-title {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35.2px;
+    color: #545454;
+}
+
+.logo-subtitle {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14.95px;
+    color: #545454;
+    letter-spacing: 10%;
+}
+
+.header-right {
+    display: flex;
+    gap: 1px;
+}
+
+.nav-button {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #545454;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 20px;
+}
+
+.nav-button::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #F1CDB3;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-button:hover::after {
+    width: 100%;
+}
+.our-pets {
+    height: 1733px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 0;
+    background-color: #F6F6F6;
+}
+
+.our-pets-content {
+    width: 798px;
+    height: 1603px;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.our-pets-headtext {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45.5px;
+    color: #545454;
+    text-align: center;
+    letter-spacing: 6%;
+    margin-top: 10px;
+}
+
+.card-content {
+    width: 580px;
+    height: 1365px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-items: center;
+}
+
+.card {
+    background: #FAFAFA;
+    border-radius: 8px; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%; /* Allow the card to take full width of the grid cell */
+    max-width: 280px; /* Adjust max-width to fit your design */
+}
+
+.card-image {
+    width: 100%; 
+    height: 270px; 
+    object-fit: cover; 
+}
+
+.card-text {
+    padding: 15px; 
+    font-family: Georgia, sans-serif; 
+    font-size: 20px;
+    letter-spacing: 0.06%; 
+    color: #545454; 
+    text-align: center; 
+}
+
+.card-button {
+    background-color: #FAFAFA;
+    color: #000000;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid #F1CDB3;
+    border-radius: 45px;
+    cursor: pointer;
+    margin: 15px 0;
+    width: calc(100% - 40px);
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.card-button:hover {
+    background-color: #F1CDB3;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+    gap: 10px;
+}
+
+.pagination-button {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #000000;
+    border-radius: 100px;
+    background-color: rgba(246, 246, 246, 1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 0;
+    transition: background-color 0.3s ease; 
+}
+
+.pagination-button img {
+    width: 24px; 
+    height: 24px; 
+}
+
+.pagination-button:hover {
+    background-color: #f1cdb3;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+    gap: 10px;
+}
+
+.pagination-button {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #f1cdb3;
+    border-radius: 100px;
+    background-color: rgba(246, 246, 246, 1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 0;
+    transition: background-color 0.3s ease; 
+    font-family: Georgia;
+    font-weight: 400;
+}
+.pagination-button1 {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #CDCDCD;
+    border-radius: 100px;
+    background-color: rgba(246, 246, 246, 1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 0;
+    transition: background-color 0.3s ease; 
+    font-family: Georgia;
+    font-weight: 400;
+    color: #CDCDCD;
+}
+.pagination-button1:hover {
+    background-color: #CDCDCD; 
+}
+
+.pagination-button img {
+    width: 24px; 
+    height: 24px; 
+}
+
+.pagination-button:hover {
+    background-color: #f1cdb3;
+}
+.pagination-button:hover {
+    background-color: #f1cdb3; 
+}
+
+.pagination-button img {
+    width: 24px;
+    height: 14px;
+}
+.section6 {
+    height: 639px;
+    background-color: #f6f6f6; /* Example background color */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    background: 
+        url('start-screen-background 768.png') no-repeat center bottom, 
+        url('footer-gradient-background.png') no-repeat center bottom;
+     /* For positioning child elements */
+}
+.contacts-layout {
+    width: 708px;
+    height: 234px;
+    position: relative; /* For positioning contact blocks */
+    margin-top: 30px; /* Top margin to position the layout */
+    margin-left: 30px; /* Left margin to position the layout */
+    display: flex; /* Align child elements horizontally */
+    align-items: flex-start; /* Align items to the top of the container */
+}
+
+/* Contact blocks */
+.contact-left, .contact-right {
+    position: absolute; /* Positioning blocks absolutely within contacts-layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out the children */
+    padding: 0 10px; /* Add horizontal padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Left Contact Block */
+.contact-left {
+    width: 278px;
+    left: 34px; /* Position from the left edge of .contacts-layout */
+    top: 0; /* Align to the top */
+}
+
+/* Right Contact Block */
+.contact-right {
+    width: 302px;
+    left: 372px; /* Position from the left edge of .contacts-layout */
+    top: 0; /* Align to the top */
+}
+
+/* Field styles */
+.field1 {
+    font-family: Georgia, serif; /* Font family */
+    font-weight: 400; /* Font weight */
+    font-size: 35px; /* Font size */
+    line-height: 45.5px; /* Line height */
+    color: #FFFFFF; /* Text color */
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 270px; /* Adjusted width to match the layout */
+    height: 90px; /* Height for the title field */
+}
+
+/* Field 2 and Field 3 styles */
+.field2, .field3 {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    margin-top: 10px; /* Space between fields */
+    height: 32px; /* Height for field containers */
+}
+
+.field2:first-of-type {
+    margin-top: 20px; /* Extra space for the first field */
+}
+
+/* Icon styles */
+.icon-left {
+    width: 40px; /* Width of the left icon */
+    height: 32px; /* Height of the left icon */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.icon-right {
+    width: 22px; /* Width of the right icon */
+    height: 32px; /* Height of the right icon */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Text inside fields */
+.text {
+    font-family: Georgia, serif; /* Font family */
+    font-weight: 400; /* Font weight */
+    font-size: 20px; /* Font size */
+    line-height: 23px; /* Line height */
+    letter-spacing: 0.06em; /* Letter spacing */
+    color: #F1CDB3; /* Text color */
+    margin: 0;
+}
+.footer-image {
+    position: absolute;
+    width: 300px; /* Width of the image */
+    height: 310px; /* Height of the image */
+    top: 329px; /* Top offset */
+    left: 234px; /* Left offset */
+}

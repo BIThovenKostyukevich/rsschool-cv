@@ -1,0 +1,693 @@
+.section2, .section1, .section3, .section4, .section5 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; 
+}
+
+.container {
+    width: 1280px;
+    height: 908px;
+    background: 
+        url('start-screen-background.png') no-repeat center center, 
+        url('start-screen-gradient-background.png') no-repeat center center; 
+    background-size: cover, cover;
+    background-attachment: fixed; 
+}
+
+header {
+    width: 1280px;
+    height: 80px;
+    background-size: cover, cover; 
+    background-attachment: fixed; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: center; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 10; 
+}
+
+.start-screen-content {
+    display: flex;
+    width: 1200px;
+    height: 728px;
+    top: 180px;
+    left: 40px;
+    position: absolute;
+}
+
+.Contents {
+    width: 460px;
+    height: 322px;
+    top: 168px;
+    position: absolute;
+}
+.left-header-text-field {
+    width: 184px;
+    height: 60px;
+    font-family: Georgia, serif;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 0px; 
+    padding-right: 480px;
+}
+
+.left-header-text-field h1 {
+    margin: 0;
+    font-size: 28px;
+    color: rgba(241, 205, 179, 1);
+}
+
+.left-header-text-field p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14.95px;
+    letter-spacing: 0.1em;
+    font-family: Arial;
+}
+
+.nav-buttons {
+    display: flex; 
+    gap: 15px; 
+}
+
+.nav-button {
+    position: relative; /* Для использования псевдоэлементов */
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #CDCDCD; 
+    text-decoration: none; 
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    background-color: transparent; 
+}
+
+.nav-button::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #F1CDB3;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-button:hover::after {
+    width: 100%;
+}
+
+.nav-button:hover {
+    background-color: transparent; /* Убрать фоновый цвет при наведении */
+}
+.section {
+    width: 100%;
+    height: 908px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+
+
+    .text-field {
+        background: transparent;
+        color: white;
+        position: relative;
+    }
+    
+    .h2-style {
+        width: 310px;
+        height: 114px;
+        font-family: Georgia;
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 57.2px;
+        text-align: left;
+    }
+    
+    .paragraph-l-style {
+        width: 390px;
+        top: 156px;
+        height: 72px;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color:#CDCDCD;
+        position: absolute;
+    }
+    .button {
+        width: 135px; 
+        height: 20px; 
+        padding: 15px 45px; 
+        border-radius: 45px; 
+        background-color:rgba(241, 205, 179, 1); 
+        color: rgb(0, 0, 0); 
+        font-family: Georgia; 
+        font-size: 17px;
+        line-height: 22.1px; 
+        font-weight: 400; 
+        letter-spacing: 0.06em;
+        text-align: center;
+        text-decoration: none; 
+        display: inline-block; 
+        cursor: pointer; 
+        position: absolute;
+        top: 270px; 
+        margin-right: 690px; 
+        opacity: 1;
+        transition: background-color 0.3s ease; /
+    }
+    
+    .button:hover {
+        background-color: rgba(241, 205, 179, 1); 
+    }
+    
+    .puppy-image {
+        width: 728px; 
+        height: 698px; 
+        position: absolute;
+        bottom: 0px; 
+        right: 60px; 
+        z-index: 1; 
+        left: 502px;
+    }
+}
+.section1 {
+    width: 1280px; 
+    height: 588px;
+    margin: 0 auto; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color: #ffffff; 
+    box-sizing: border-box; 
+ 
+        .content {
+            width: 1200px; 
+            height: 408px;
+            display: flex; 
+            align-items: center; 
+            left: 40px;
+            justify-content: space-evenly;
+        }
+        
+        .about-pets-image {
+            height: 408px; 
+            width: 300px;
+            border-radius: 8px; 
+            left: 175px;
+            position: sticky;
+        }
+
+        .combined-text-fields {
+            border-radius: 8px; 
+            width: 430px; 
+            height: 380px;
+            left: 575px;
+            position: sticky; 
+        }
+        
+        .text-field1 {
+            font-family: Georgia; 
+            font-size: 35px; 
+            font-weight: 400; 
+            color: #545454;
+            letter-spacing: 6%;
+            margin-top: 0%;
+            margin-bottom: 0%; 
+        }
+        
+        .text-field2, .text-field3 {
+            font-family: Arial;
+            font-size: 15px;
+            color: #4C4C4C; 
+            line-height: 1.6; 
+            margin-bottom: 20px; 
+        }
+
+}
+.section2 {
+    background-color: rgba(246, 246, 246, 1); 
+    padding: 100px 20px; 
+    box-sizing: border-box; 
+    max-width: 1280px; 
+    position: relative;
+}
+
+.section-header h3 {
+    font-family: Georgia, sans-serif; 
+    font-weight: 400; 
+    font-size: 35px; 
+    line-height: 45.5px;
+    letter-spacing: 6%; 
+    text-align: center;
+    margin-bottom: 20px; 
+    color: #545454;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 80px; 
+    box-sizing: border-box;
+}
+
+.card {
+    background: rgba(250, 250, 250, 1);
+    border-radius: 8px; 
+    overflow: hidden;
+    width: 270px; 
+    height: 435px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.card-image {
+    width: 270px;
+    height: 270px; 
+}
+
+.card-text {
+    padding: 15px; 
+    font-family: Georgia, sans-serif; 
+    font-size: 20px;
+    line-height: 22.72px; 
+    color: #545454; 
+    text-align: center; 
+}
+.card-button {
+    background-color: #ffffff; /* Белый фон */
+    color: #000000; /* Черный цвет текста */
+    font-family: Georgia, serif; /* Шрифт Georgia */
+    font-size: 16px; /* Размер шрифта */
+    font-weight: 400; /* Толщина шрифта */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 10px 20px; /* Внутренние отступы */
+    border: 2px solid #F1CDB3; /* Граница 2 пикселя с цветом #F1CDB3 */
+    border-radius: 45px; /* Радиус границы */
+    cursor: pointer; /* Указатель при наведении */
+    margin: 15px 0; /* Внешние отступы */
+    width: calc(100% - 40px); /* Ширина кнопки с учетом отступов */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Плавный переход при наведении */
+}
+
+.card-button:hover {
+    background-color: #F1CDB3; /* Фон кнопки при наведении */
+    border-color: #F1CDB3; /* Цвет границы при наведении */
+    color: #FFFFFF; /* Цвет текста кнопки при наведении */
+}.special-button {
+    display: block; 
+    margin: 40px auto 0; /* Сохранение положения на экране, как в примере */
+    background-color: #F1CDB3; /* Цвет фона */
+    color: #292929; /* Цвет текста */
+    font-family: Georgia, serif; /* Шрифт Georgia */
+    font-size: 17px; /* Размер шрифта */
+    font-weight: 400; /* Толщина шрифта */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 15px 45px; /* Внутренние отступы */
+    border: none; /* Без границы */
+    border-radius: 100px; /* Радиус границы */
+    cursor: pointer; /* Указатель при наведении */
+    width: 260px; /* Ширина кнопки */
+    height: 52px; /* Высота кнопки */
+    transition: background-color 0.3s ease; /* Плавный переход при наведении */
+}
+
+.special-button:hover {
+    background-color: #e0b89a; 
+}
+
+  
+
+/* Основной стиль для кнопок со стрелками */
+.arrow-button {
+    width: 52px;
+    height: 52px;
+    border: 3px solid #F1CDB3; /* Черная граница */
+    border-radius: 100px;
+    background-color: rgba(246, 246, 246, 1); /* Цвет фона */
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Центрирование по вертикали */
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: background-color 0.3s, border-color 0.3s; /* Плавный переход при наведении */
+}
+
+/* Стиль для кнопки со стрелкой влево */
+.left-arrow {
+    left: 10px; /* Расположение слева */
+}
+
+/* Стиль для кнопки со стрелкой вправо */
+.right-arrow {
+    right: 10px; /* Расположение справа */
+}
+
+/* Изменение стиля кнопки при наведении */
+.arrow-button:hover {
+    background-color: #F1CDB3; /* Изменение фона при наведении */
+    border-color: #F1CDB3; /* Изменение границы при наведении */
+}
+
+/* Стиль для иконки стрелки */
+.arrow-button img {
+    width: 14px;
+    height: 6px;
+    color: #292929; /* Цвет иконки */
+}
+
+/* Поворот иконки для правой стрелки */
+.right-arrow img {
+    transform: rotate(180deg); /* Поворот на 180 градусов */
+}
+
+#section3 {
+    height: 611px; 
+    background-color: white; 
+    color: black; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 0; 
+    margin: 0; 
+}
+
+
+.section3 .containers3 {
+    width: 1200px; 
+    height: 431px; 
+    background-color: rgb(255, 255, 255); 
+    box-sizing: border-box;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+
+.text-tops3 {
+    font-family: Georgia, serif;
+    text-align: center; 
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #545454;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    display: flex;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+
+.containers32 {
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 30px;
+
+}
+
+.rows3 {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+    margin:auto;
+}
+
+.cards3 {
+    width: 153px;
+    height: 113px; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-images3 {
+    max-width: 100%; 
+    max-height: 70%; 
+    object-fit: cover; 
+    margin-bottom: 5px; 
+}
+
+.card-texts3 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    line-height: 115%; 
+    color: #545454; 
+    text-align: center;
+}
+
+#section4 {
+    height: 462px;
+    background-color: rgba(246, 246, 246, 1);
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+.containers4 {
+    background-color: rgba(246, 246, 246, 1);
+    height: 282px;
+    width: 915px;
+    padding-top: 80px;
+    margin-left: 183px;
+    display: flex;
+}
+.donation-dog-image {
+    height: 280px;
+    width: 505px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+.combined-text-fieldss4 {
+    height: 282px;
+    width: 380px;
+    flex: 1;
+}
+.text-fields41 {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 115%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+.text-fields44 {
+    height: 43px;
+    background-color:  rgba(241, 205, 179, 1); 
+    text-align: center;
+    line-height: 45px; 
+}
+.text-fields44 {
+    font-size: 22px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.text-fields44 {
+    width: 349px;
+    padding: 5px 15px;
+    margin-bottom: 10px; 
+    border-radius: 9px;
+    font-family: Georgia, sans-serif;
+    color:#545454;
+    letter-spacing: 0.06em;
+}
+.text-fields42 {
+    width: 310px;
+    height: 17px;
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+.text-fields43 {
+    width: 380px;
+    height: 72px;
+    top: 210px;
+    font-family: 'Arial', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #B2B2B2;
+}
+
+.section5 {
+    width: 1280px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(246, 246, 246, 1);
+    /*padding: 20px;*/
+    box-sizing: border-box;
+}
+
+.container5 {
+    width: 1280px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 20px;
+    background: 
+        url('start-screen-background.png') no-repeat center center,
+        url('start-screen-gradient-background.png') no-repeat center center; 
+    background-size: cover, cover;
+}
+
+
+.text-container {
+    width: 310px;
+    top: 40px;
+    height: 306px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    gap: 15px;
+    position: relative;
+}
+
+.left-text {
+    margin-right: 20px;
+}
+
+.center-text {
+    margin-right: 20px;
+}
+
+.top-text {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: white;
+    font-size: 35px;
+    font-family: Georgia, serif;
+    letter-spacing: 0.06em;
+    line-height: 45.5px;
+}
+
+.middle-text, .bottom-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.middle-text img, .bottom-text img {
+    margin-right: 10px;
+}
+
+.inline-image {
+    width: 32px;
+    height: 40px;
+}
+.inline-image1 {
+    width: 40px;
+    height: 32px;
+}
+
+.image-container {
+    width: 300px;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-image18 {
+    width: 300px;
+    height: 310px;
+    object-fit: cover;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+.email {
+    width: 190px;
+    height: 23px;
+    font-family: Georgia;
+    font-size: 20px;
+    color: #F1CDB3;
+    letter-spacing: 0.06em;
+    line-height: 23px;
+}
+.phone {
+    width: 190px;
+    height: 23px;
+    font-family: Georgia;
+    font-size: 20px;
+    color: #F1CDB3;
+    letter-spacing: 0.06em;
+    line-height: 23px;
+}
+.street {    width: 390px;
+    height: 23px;
+    font-family: Georgia;
+    font-size: 20px;
+    color: #F1CDB3;
+    letter-spacing: 0.06em;
+    line-height: 23px;
+}
+.street1 {    width: 290px;
+    height: 23px;
+    font-family: Georgia;
+    font-size: 20px;
+    color: #F1CDB3;
+    letter-spacing: 0.06em;
+    line-height: 23px;
+}
